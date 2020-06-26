@@ -1,0 +1,15 @@
+.card{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.image{
+    //background-image: url('/assets/ssbg.jpg');
+    background-color: #323232;
+}
+
+.card:hover {
+    transform: scale(1.3);
+  }

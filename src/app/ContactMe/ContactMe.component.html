@@ -1,0 +1,85 @@
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="main">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-sm-7" style="margin-top: 30px;">
+          <div class="contact">
+            <h1>HAVE SOME QUESTIONS?</h1>
+            <h2>Feel free to keep in touch!</h2><br>
+            <h4><img class="phone" src="assets/phone.png" alt="phone"> 9820391092</h4> <br>
+            <h4><img class="email" src="assets/email.png" alt="email"> sujit.prajapati99@gmail.com</h4>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="card border-secondary mb-3" style="border: 2px solid blue;">
+            <div class="card-header bg-transparent border-secondary">
+              <h3>Contact Me</h3>
+            </div>
+            <div class="card-body bg-transparent border-secondary">
+              <form (ngSubmit)="queryForm.form.valid && toSubmit()" #queryForm="ngForm">
+                <div class="container-fluid">
+        
+                  <div class="form-group">
+                    <label><b>Full Name:</b></label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user-circle-o"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Username" [(ngModel)]="ContactDetail.name"
+                        name="name" required #fname="ngModel" [appHighlight]="'GAINSBORO'">
+                    </div>
+                    <div class="alert alert-danger" role="alert" [hidden]="fname.valid || fname.pristine">
+                      Username Is Required!!!
+                    </div>
+                  </div>
+        
+                  <div class="form-group">
+                    <label><b>Contact Number:</b></label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                      </div>
+                    <input type="number" class="form-control" placeholder="Ex.- 1234567890"
+                      [(ngModel)]="ContactDetail.contact" name="contact" [appHighlight]="'GAINSBORO'">
+                    </div>
+                  </div>
+        
+                  <div class="form-group">
+                    <label><b>Email Id:</b></label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
+                      </div>
+                    <input type="email" class="form-control" placeholder="name@example.com" [(ngModel)]="ContactDetail.email"
+                      name="email" required #femail="ngModel" [appHighlight]="'GAINSBORO'">
+                      </div>
+                    <div class="alert alert-danger" role="alert" [hidden]="femail.valid || femail.pristine">
+                      Email Is Required!!!
+                    </div>
+                  </div>
+        
+                  <div class="form-group">
+                    <label><b>Your Message:</b></label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-comments"></i></span>
+                      </div>
+                    <textarea class="form-control" rows="3" [(ngModel)]="ContactDetail.description" name="description" required
+                      #fdescription="ngModel" [appHighlight]="'GAINSBORO'"></textarea>
+                    </div>
+                    <div class="alert alert-danger" role="alert" [hidden]="fdescription.valid || fdescription.pristine">
+                      Message Is Required!!!
+                    </div>
+                  </div>
+        
+                  <button type="submit" class="btn btn-primary btn-block" [disabled]="queryForm.form.invalid"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+

@@ -1,0 +1,76 @@
+.main{
+  background-color: #191919;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+
+*img {
+  opacity: 0.6;
+}
+
+*img:hover {
+  opacity: 1.0;
+}
+
+@media(min-width: 360px) and (max-width: 550px) {
+  .title{
+    padding-top: 20px;
+  }
+  .title h3{
+    font-size: 20px;
+  }
+  .para{
+    font-size: 10px;
+  }
+  .btn{
+    font-size: 10px;
+  }  
+}
+
+@media(min-width: 250px) and (max-width: 359px) {
+  .title{
+    padding-top: 20px;
+  }
+  .title h3{
+    font-size: 18px;
+  }
+  .para{
+    font-size: 12px;
+  }
+  .btn{
+    font-size: 10px;
+  }
+}
+
+@media(min-width: 551px) and (max-width: 800px) {
+  .title{
+    padding-top: 20px;
+  }
+  .title h3{
+    font-size: 22px;
+  }
+  .para{
+    font-size: 12px;
+  }
+  .btn{
+    font-size: 15px;
+  }
+}
+
+@media(min-width: 801px) and (max-width: 1050px) {
+  .title{
+    padding-top: 20px;
+  }
+  .title h3{
+    font-size: 25px;
+  }
+  .para{
+    font-size: 17px;
+  }
+  .btn{
+    font-size: 15px;
+}
+}

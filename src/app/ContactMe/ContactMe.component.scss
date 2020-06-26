@@ -1,0 +1,105 @@
+.form-control{
+    width: 70%;
+}
+
+.ng-valid:not(form).ng-dirty{
+    border-left: solid 10px green;
+}
+
+.ng-invalid:not(form).ng-dirty{
+    border-left: solid 10px red;
+}
+
+.alert{
+    width: 100%;
+}
+
+.card{
+    background-color: cornsilk;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:auto;
+    margin-right:auto;
+    background: transparent;
+}
+
+.main{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  background-color: #323232;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+@media(min-width: 360px) and (max-width: 550px) {
+  .contact h1{
+    font-size: 20px;
+  }
+  .contact h2{
+    font-size: 18px;
+  }
+  .contact h4{
+    font-size: 15px;
+  }
+  .phone, .email{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media(min-width: 250px) and (max-width: 359px) {
+  .contact h1{
+    font-size: 20px;
+  }
+  .contact h2{
+    font-size: 18px;
+  }
+  .contact h4{
+    font-size: 15px;
+  }
+  .phone, .email{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media(min-width: 551px) and (max-width: 800px) {
+  .contact h1{
+    font-size: 25px;
+  }
+  .contact h2{
+    font-size: 22px;
+  }
+  .contact h4{
+    font-size: 20px;
+  }
+  .phone, .email{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media(min-width: 801px) and (max-width: 1050px) {
+  .contact h1{
+    font-size: 30px;
+  }
+  .contact h2{
+    font-size: 25px;
+  }
+  .contact h4{
+    font-size: 20px;
+  }
+  .phone, .email{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+div.card{
+  box-shadow: 0 4px 8px 0 	steelblue, 0 6px 20px 0 whitesmoke;
+}
